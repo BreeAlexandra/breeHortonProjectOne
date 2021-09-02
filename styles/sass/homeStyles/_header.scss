@@ -1,0 +1,15 @@
+.home header {
+    background-image: url("../beach-final-images/home-image-1.jpg");
+    height: 100vh;
+    background-size: cover;
+}
+
+.home header nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerBox {
+    width: 100px;
+    height: 100px;
+}

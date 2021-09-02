@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5e8c2a7fc9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+
+</head>
+<body class="blog">
+    <header>
+        <div class="wrapper">
+            <nav>
+                <h6>Beachstays</h6>
+                <ul>
+                    <li><a href=""></a>Home</li>
+                    <li><a href=""></a>About</li>
+                    <li><a href=""></a>Blog</li>
+                    <li><a href=""></a>Contact</li>
+                </ul>
+            </nav>
+            <h2>Blog</h2>
+        </div> <!-- ./wrapper -->
+    </header>
+
+    <main>
+        <article>
+            <img src="./beach-final-images/post-image.jpg" alt="wooden ramp to a wood shingled square house surrounded by tall grasses">
+            <h4>Five days of ocean seas</h4>
+            <p>Monday January 21st, 2019 by <span>Bora</span></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, eius! Totam, iusto! Voluptas consequuntur magni nostrum ducimus officia est libero quisquam ex repellat reprehenderit. Qui molestias veniam omnis! Itaque, porro.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magnam laboriosam porro quae unde accusantium iste ipsam doloribus quas consequatur illum ex est recusandae repellendus soluta omnis hic, nulla impedit.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quis et autem facere, similique saepe tenetur blanditiis aperiam, porro dicta mollitia omnis voluptatum eum illum maxime cum nam reprehenderit fugit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, laudantium eos! Odio nisi rem sequi culpa tempore, itaque laboriosam quam voluptatibus illum ullam iure corporis nemo at atque fugiat eaque?</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor adipisci suscipit iste consectetur nesciunt tenetur tempore perferendis aliquid itaque.</p>
+        </article>
+        <aside>
+            <img src="./beach-final-images/sidebar-image.jpg" alt="two houses with docks going out into the water">
+            <h5>Our mission</h5>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo obcaecati placeat corporis iste consectetur ab nemo.</p>
+            <a href="">Find out more.</a>
+            <h5>Recent Posts</h5>
+            <ul>
+                <li>Lorem ipsum dolor sit</li>
+                <li>Lorem ipsum dolor sit</li>
+                <li>Lorem ipsum dolor sit</li>
+                <li>Lorem ipsum dolor sit</li>
+            </ul>
+        </aside>
+        <section class="comments">
+            <div class="wrapper">
+                <h5>Comments:</h5>
+                <div class="comment1">
+                    <div class="c1imageContainer">
+                        <img src="./beach-final-images//comment-image.jpg" alt="a man's headshot">
+                    </div> <!-- ./c1imageContainer -->
+                    <div class="c1textContainer">
+                        <p>Tuesday October 9th, 2019 by Reyansh</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eum sit labore perferendis. Dolor quis adipisci ea voluptatum? Soluta mollitia quisquam rerum nemo maxime beatae error quaerat dicta animi consectetur.</p>
+                    </div> <!-- ./c1textContainer -->
+                </div> <!-- ./comment1 -->
+                <div class="comment2">
+                    <div class="c2imageContainer">
+                        <img src="./beach-final-images/comment-image2.jpg" alt="a woman wearing sunglasses headshot">
+                    </div> <!-- ./c2imageContainer -->
+                    <div class="c2textContainer">
+                        <p>Wednesday October 10th, 2019 by Olivia</p>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus incidunt nisi rem aperiam inventore nesciunt, iste quibusdam. Cum molestiae corporis quam quas, delectus, natus rem odit, asperiores vel necessitatibus consequuntur.</p>
+                    </div> <!-- ./c2textContainer -->
+                </div> <!-- ./comment2 -->
+            </div> <!-- ./wrapper -->
+        </section>
+        <section>
+            <div class="wrapper">
+                <form action="submit" method="GET" class="commentForm">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Name">
+
+                    <label for="email">Email address</label>
+                    <input type="email" name="email" id="email" placeholder="Email address">
+
+                    <textarea name="comments" id="comments" placeholder="Comment" cols="30" rows="10"></textarea>
+                    <button type="submit">Post Comment</button>
+                </form>
+            </div> <!-- ./wrapper -->
+        </section>
+    </main>
+    <footer>Copyright 2019 HackerYou</footer>
+</body>
+</html>

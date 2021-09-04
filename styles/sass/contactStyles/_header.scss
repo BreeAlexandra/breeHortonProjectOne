@@ -1,0 +1,26 @@
+.contact header {
+    @include header("../beach-final-images/contact-image-1.jpg") {
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+                ul {
+                    list-style: none;
+                    display: flex;
+                    width: 40%;
+                    justify-content: space-between;
+                        a {
+                            color: #fafffe;
+                            text-transform: uppercase;
+                            font-weight: bold;
+                            line-height: 29px;
+                            letter-spacing: 1px;
+                        }
+                }
+        }
+    }
+}
+
+.contact header li:last-child a {
+    color: $primaryColor;
+}

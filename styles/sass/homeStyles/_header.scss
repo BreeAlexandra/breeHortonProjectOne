@@ -1,15 +1,58 @@
 .home header {
-    background-image: url("../beach-final-images/home-image-1.jpg");
-    height: 100vh;
-    background-size: cover;
+    @include header("../beach-final-images/home-image-1.jpg") {
+        position: relative;
+            nav {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px 0;
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        width: 40%;
+                        justify-content: space-between;
+                            a {
+                                color: #fafffe;
+                                text-transform: uppercase;
+                                font-weight: bold;
+                                line-height: 29px;
+                                letter-spacing: 1px;
+                            }
+                    }
+            }
+    }
 }
 
-.home header nav {
+.home header li:first-child a {
+    color: $primaryColor;
+}
+
+.h1Container {
     display: flex;
-    justify-content: space-between;
+    height: 90vh;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3.1rem;
+    font-weight: bold;
+    color: #0c5f4c;
+    line-height: 58px;
+    letter-spacing: 6.7px;
+    text-transform: lowercase;
+    z-index: 10;
+        span {
+            display: block;
+            font-family: 'Playfair Display SC', serif;
+            font-size: 5.56rem;
+            color: #063974;
+            padding-top: 10px;
+        }
 }
 
 .headerBox {
-    width: 100px;
-    height: 100px;
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: 200px;
 }

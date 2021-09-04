@@ -235,6 +235,11 @@ html {
   overflow: hidden;
 }
 
+html {
+  font-size: 125%;
+  font-family: "Lato", sans-serif;
+}
+
 .wrapper {
   width: 85%;
   max-width: 1280px;
@@ -250,20 +255,29 @@ h1, h2, h3, h4, h5, h6, p, ul, li {
   padding: 0;
 }
 
-ul {
-  list-style: none;
-}
-
 a {
   text-decoration: none;
 }
 
-.home header {
-  background-image: url("../beach-final-images/home-image-1.jpg");
-  height: 100vh;
-  background-size: cover;
+h2 {
+  color: #fafffe;
+  font-weight: bold;
+  font-size: 4.35rem;
+  letter-spacing: 9px;
 }
 
+nav h6 {
+  font-family: "Playfair Display SC", serif;
+  font-size: 1.73rem;
+  color: #50e3c2;
+}
+
+.home header {
+  background-image: url("../beach-final-images/home-image-1.jpg");
+  height: 90vh;
+  background-size: cover;
+  position: relative;
+}
 .home header nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -271,9 +285,103 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding: 20px 0;
+}
+.home header nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.home header nav ul a {
+  color: #fafffe;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
+.home header li:first-child a {
+  color: #50e3c2;
+}
+
+.h1Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 90vh;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+h1 {
+  font-size: 3.1rem;
+  font-weight: bold;
+  color: #0c5f4c;
+  line-height: 58px;
+  letter-spacing: 6.7px;
+  text-transform: lowercase;
+  z-index: 10;
+}
+h1 span {
+  display: block;
+  font-family: "Playfair Display SC", serif;
+  font-size: 5.56rem;
+  color: #063974;
+  padding-top: 10px;
 }
 
 .headerBox {
-  width: 100px;
-  height: 100px;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  top: 200px;
+}
+
+.blog header {
+  background-image: url("../beach-final-images/blog-image-1.jpg");
+  height: 90vh;
+  background-size: cover;
+}
+.blog header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+.blog header nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.blog header nav ul a {
+  color: #fafffe;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
+.blog header li:nth-child(2) a {
+  color: #50e3c2;
+}
+
+h2 {
+  padding: 180px 0;
 }

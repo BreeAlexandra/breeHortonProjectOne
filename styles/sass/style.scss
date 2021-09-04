@@ -1,3 +1,7 @@
 @import "setup";
+@import "vars";
 @import "general";
-@import "home/header";
+@import "homeStyles/header";
+@import "homeStyles/main";
+@import "blogStyles/header";
+@import "contactStyles/header";

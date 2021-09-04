@@ -264,6 +264,7 @@ h2 {
   font-weight: bold;
   font-size: 4.35rem;
   letter-spacing: 9px;
+  padding: 180px 0;
 }
 
 nav h6 {
@@ -273,7 +274,7 @@ nav h6 {
 }
 
 .home header {
-  background-image: url("../beach-final-images/home-image-1.jpg");
+  background-image: url("../assets/home-image-1.jpg");
   height: 90vh;
   background-size: cover;
   position: relative;
@@ -347,7 +348,7 @@ h1 span {
 }
 
 .blog header {
-  background-image: url("../beach-final-images/blog-image-1.jpg");
+  background-image: url("../assets/blog-image-1.jpg");
   height: 90vh;
   background-size: cover;
 }
@@ -382,6 +383,38 @@ h1 span {
   color: #50e3c2;
 }
 
-h2 {
-  padding: 180px 0;
+.contact header {
+  background-image: url("../assets/contact-image-1.jpg");
+  height: 90vh;
+  background-size: cover;
+}
+.contact header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+.contact header nav ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact header nav ul a {
+  color: #fafffe;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 29px;
+  letter-spacing: 1px;
+}
+
+.contact header li:last-child a {
+  color: #50e3c2;
 }

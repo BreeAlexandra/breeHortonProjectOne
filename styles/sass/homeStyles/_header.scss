@@ -1,6 +1,6 @@
 .home header {
-    @include header("../beach-final-images/home-image-1.jpg") {
-        position: relative;
+    @include header ("../assets/home-image-1.jpg"); 
+    position: relative;
             nav {
                 display: flex;
                 justify-content: space-between;
@@ -19,8 +19,8 @@
                             }
                     }
             }
-    }
 }
+
 
 .home header li:first-child a {
     color: $primaryColor;

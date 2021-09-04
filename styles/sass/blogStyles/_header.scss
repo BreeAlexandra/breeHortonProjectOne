@@ -1,5 +1,5 @@
 .blog header {
-    @include header("../beach-final-images/blog-image-1.jpg") {
+    @include header("../assets/blog-image-1.jpg"); 
         nav {
             display: flex;
             justify-content: space-between;
@@ -18,8 +18,8 @@
                         }
                 }
         }
-    }
 }
+
 .blog header li:nth-child(2) a {
     color: $primaryColor;
 }

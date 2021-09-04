@@ -1,5 +1,5 @@
 .contact header {
-    @include header("../beach-final-images/contact-image-1.jpg") {
+    @include header("../assets/contact-image-1.jpg"); 
         nav {
             display: flex;
             justify-content: space-between;
@@ -18,8 +18,8 @@
                         }
                 }
         }
-    }
 }
+
 
 .contact header li:last-child a {
     color: $primaryColor;

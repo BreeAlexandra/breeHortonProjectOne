@@ -1,0 +1,150 @@
+// ARTICLE SECTION
+
+
+.blog main {
+    background: $iceBlue;
+}
+
+.blogFlex {
+    display: flex;
+    justify-content: space-between;
+}
+
+article {
+    position: relative;
+    width: 60%;
+    border-width: 0 5px 5px 0;
+    border-style: solid;
+    border-color: $primaryColor;
+        img {
+            box-shadow: 20px 20px $primaryColor;
+            position: absolute;
+            top: -150px;
+            left: -15px;
+        }
+}
+
+.articleText {
+    padding: 425px 50px 50px 30px;
+    margin-left: 75px;
+        p {
+            margin: 25px 0;
+        }
+        p:first-of-type {
+            margin: 0 auto;
+            color: $twilightBlue;
+            font-style: italic;
+                span {
+                    font-weight: bold;
+                }
+        }
+}
+
+.blog article h4 {
+    color: $spruce;
+}
+
+// ASIDE SECTION
+
+
+aside {
+    width: 25%;
+    padding-top: 100px;
+        p:nth-of-type(odd) {
+            color: $twilightBlue;
+            font-size: 1.25rem;
+        }
+        ul {
+            padding-left: 10px;
+            color: $primaryColor;
+                li {
+                    color: black;
+                    line-height: 1.6rem;
+                    letter-spacing: 0.1rem;
+                }
+                li::before {
+                    content: "•";
+                    color: $primaryColor;
+                    padding: 10px;
+                }
+        }
+}
+
+aside p {
+    margin: 25px 0;
+        a {
+            display: block;
+            font-weight: bold;
+            color: $spruce;
+        }
+}
+
+// COMMENTS SECTION
+
+
+.comment1,
+.comment2 {
+    width: 60%;
+    display: flex;
+    padding: 40px 0;
+}
+
+.c1imageContainer,
+.c2imageContainer {
+    width: 20%;
+}
+
+.c1textContainer,
+.c2textContainer {
+    width: 80%;
+}
+
+.comments {
+    padding: 50px 0;
+        h5 {
+            font-family: 'Josefin Sans', sans-serif;
+            color: black;
+            width: 60%;
+        }
+}
+
+.comments p:first-child {
+    color: $twilightBlue;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+// FORM SECTION
+
+.commentForm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 100px;
+        input[type=text],
+        input[type=email] {
+            width: 45%;
+            padding: 20px 40px;
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+            border-bottom: 2px solid $primaryColor;
+            margin-bottom: 30px;
+        }
+        textarea,
+        button  {
+            width: 100%;
+        }
+        textarea {
+            resize: none;
+            border: 2px solid $primaryColor;
+            padding: 75px 40px;
+        }
+}
+
+::placeholder {
+    font-weight: 300;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+}

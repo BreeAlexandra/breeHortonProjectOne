@@ -6,12 +6,11 @@
                 justify-content: space-between;
                 padding: 20px 0;
                     ul {
-                        list-style: none;
                         display: flex;
                         width: 40%;
                         justify-content: space-between;
                             a {
-                                color: #fafffe;
+                                color: $iceBlue;
                                 text-transform: uppercase;
                                 font-weight: bold;
                                 line-height: 29px;
@@ -36,7 +35,7 @@
 h1 {
     font-size: 3.1rem;
     font-weight: bold;
-    color: #0c5f4c;
+    color: $spruce;
     line-height: 58px;
     letter-spacing: 6.7px;
     text-transform: lowercase;
@@ -45,7 +44,7 @@ h1 {
             display: block;
             font-family: 'Playfair Display SC', serif;
             font-size: 5.56rem;
-            color: #063974;
+            color: $twilightBlue;
             padding-top: 10px;
         }
 }

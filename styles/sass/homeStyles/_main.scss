@@ -1,0 +1,160 @@
+// VISIT GUYANA SECTION
+
+.visitGuyana {
+    background: $iceBlue;
+        p {
+            margin: 25px 0;
+        }
+}
+
+.visitGuyana .wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 250px 0;
+}
+
+.VGtextContainer {
+    width: 60%;
+}
+
+.VGimage {
+    box-shadow: -20px 20px $primaryColor;
+    width: 350px;
+    height: 350px;
+}
+
+// GALLERY SECTION
+
+.imageGallery {
+    background: $lightBlue;
+    height: 75vh;
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 75vh;
+                li {
+                    width: 30%;
+                }
+        }
+}
+
+// INFORMATION SECTION
+
+.information {
+    background: $iceBlue;
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 50px 0;
+        }
+}
+
+.beachHouses,
+.community,
+.infoBlog,
+.getInTouch {
+    display: flex;
+    width: 50%;
+    padding: 25px;
+        i {
+            font-size: 1.5rem;
+            color: $iceBlue;
+            background: $primaryColor;
+            border-radius: 50%;
+        }
+}
+
+.icon {
+    width: 15%;
+        .fas {
+            height: 50px;
+            width: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+}
+.text {
+    width: 85%;
+}
+
+
+// PLAN AHEAD SECTION
+
+.planAhead {
+    background: $lightBlue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+        p {
+            margin: 25px 0;
+        }
+}
+
+.PAimageContainer,
+.PAtextContainer {
+    width: calc(50% - 100px);
+    margin-right: 50px;
+}
+
+.PAimageContainer {
+    position: relative;
+        img {
+            position: absolute;
+            top: -200px;
+            box-shadow: 20px 20px $primaryColor;
+        }
+}
+
+
+// NEW LOCATIONS SECTION
+
+.newLocations {
+    background: $lightBlue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+}
+
+.NLtextContainer,
+.NLimageContainer {
+    width: calc(50% - 100px);
+    margin-left: 50px;
+}
+
+.NLimageContainer {
+    position: relative;
+        img {
+            position: absolute;
+            top: -200px;
+            right: 0px;
+            box-shadow: -20px 20px $primaryColor;
+
+        }
+}
+
+.NLtextContainer {
+    text-align: right;
+        p {
+            margin: 25px 0;
+        }
+}
+
+// FREE SECTION
+
+.free {
+    background: $iceBlue;
+        .wrapper {
+            text-align: center;
+            padding: 100px;
+                h4 {
+                    color: $spruce;
+                }
+                p {
+                    margin: 25px 0;
+                }
+        }
+}

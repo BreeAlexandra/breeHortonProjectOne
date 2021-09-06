@@ -5,12 +5,11 @@
             justify-content: space-between;
             padding: 20px 0;
                 ul {
-                    list-style: none;
                     display: flex;
                     width: 40%;
                     justify-content: space-between;
                         a {
-                            color: #fafffe;
+                            color: $iceBlue;
                             text-transform: uppercase;
                             font-weight: bold;
                             line-height: 29px;

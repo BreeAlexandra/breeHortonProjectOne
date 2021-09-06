@@ -9,6 +9,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playfair+Display+SC:ital,wght@1,900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/5e8c2a7fc9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./styles/style.css">
 
@@ -30,28 +31,32 @@
     </header>
 
     <main>
-        <article>
-            <img src="./assets/post-image.jpg" alt="wooden ramp to a wood shingled square house surrounded by tall grasses">
-            <h4>Five days of ocean seas</h4>
-            <p>Monday January 21st, 2019 by <span>Bora</span></p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, eius! Totam, iusto! Voluptas consequuntur magni nostrum ducimus officia est libero quisquam ex repellat reprehenderit. Qui molestias veniam omnis! Itaque, porro.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magnam laboriosam porro quae unde accusantium iste ipsam doloribus quas consequatur illum ex est recusandae repellendus soluta omnis hic, nulla impedit.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium quis et autem facere, similique saepe tenetur blanditiis aperiam, porro dicta mollitia omnis voluptatum eum illum maxime cum nam reprehenderit fugit. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis, laudantium eos! Odio nisi rem sequi culpa tempore, itaque laboriosam quam voluptatibus illum ullam iure corporis nemo at atque fugiat eaque?</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor adipisci suscipit iste consectetur nesciunt tenetur tempore perferendis aliquid itaque.</p>
-        </article>
-        <aside>
-            <img src="./assets/sidebar-image.jpg" alt="two houses with docks going out into the water">
-            <h5>Our mission</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo obcaecati placeat corporis iste consectetur ab nemo.</p>
-            <a href="">Find out more.</a>
-            <h5>Recent Posts</h5>
-            <ul>
-                <li>Lorem ipsum dolor sit</li>
-                <li>Lorem ipsum dolor sit</li>
-                <li>Lorem ipsum dolor sit</li>
-                <li>Lorem ipsum dolor sit</li>
-            </ul>
-        </aside>
+        <div class="blogFlex">
+            <article>
+                <img src="./assets/post-image.jpg" alt="wooden ramp to a wood shingled square house surrounded by tall grasses">
+                <div class="articleText">
+                    <h4>Five days of ocean seas</h4>
+                    <p>Monday January 21st, 2019 by <span>Bora</span></p>
+                    <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis nibh lacinia at. Vestibulumnec erat ut mi sollicitudin porttitor id sit amet risus. Nam tempus vel odio vitae aliquam.</p>
+                    <p>In imperdiet eros id lacus vestibulum vestibulum. Suspendisse fermentum sem sagittis ante venenatis egestas quis vel justo. Maecenas semper suscipit nunc, sed aliquam sapien convallis eu. Nulla ut turpis in diam dapibus consequat. Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacu.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium pretium tempor. Ut eget imperdiet neque. In volutpat ante semper diam molestie, et aliquam erat laoreet. Sed sit amet arcu aliquet, molestie justo at, auctor nunc. Phasellus ligula ipsum, volutpat eget semper id, viverra eget nibh. Suspendisse luctus mattis cursus. Name consectetur ante at nisl hendrerit gravida. Donec vehicula rhocus mattis. Mauris dignissim semper mattis. Fusce porttitor a mi at suscipit.</p>
+                    <p>Praesent facilisis dolor sapien, vel sodales augue mollis ut. Mauris venenatis magna eu tortor posuere luctus. Aenean tincindunt turpis sed dui aliquam vehicula.</p>
+                </div>
+            </article>
+            <aside>
+                <img src="./assets/sidebar-image.jpg" alt="two houses with docks going out into the water">
+                <p>Our mission</p>
+                <p>Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum. <a href="">Find out more.</a></p>
+                
+                <p>Recent Posts</p>
+                <ul>
+                    <li>Donec facilisis tortor ut</li>
+                    <li>Augue lacinia at viverra</li>
+                    <li>Semper sed sapien metus</li>
+                    <li>Scelerisque nec pharetra</li>
+                </ul>
+            </aside>
+        </div> <!-- ./blogFlex -->
         <section class="comments">
             <div class="wrapper">
                 <h5>Comments:</h5>
@@ -61,7 +66,7 @@
                     </div> <!-- ./c1imageContainer -->
                     <div class="c1textContainer">
                         <p>Tuesday October 9th, 2019 by Reyansh</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam eum sit labore perferendis. Dolor quis adipisci ea voluptatum? Soluta mollitia quisquam rerum nemo maxime beatae error quaerat dicta animi consectetur.</p>
+                        <p>Fusce vehicula dolor arcu, sit amet blandit dolor mollis nec. Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultricies. Donec euismod scelerisque ligula. Maecenas eu varius risus..</p>
                     </div> <!-- ./c1textContainer -->
                 </div> <!-- ./comment1 -->
                 <div class="comment2">
@@ -70,7 +75,7 @@
                     </div> <!-- ./c2imageContainer -->
                     <div class="c2textContainer">
                         <p>Wednesday October 10th, 2019 by Olivia</p>
-                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus incidunt nisi rem aperiam inventore nesciunt, iste quibusdam. Cum molestiae corporis quam quas, delectus, natus rem odit, asperiores vel necessitatibus consequuntur.</p>
+                        <p>Donec viverra eleifend lacus, vitae ullamcorper metus. Sed sollicitudin ipsum quis nunc sollicitudin ultrices. Donec euismod scelerisque ligula.</p>
                     </div> <!-- ./c2textContainer -->
                 </div> <!-- ./comment2 -->
             </div> <!-- ./wrapper -->
@@ -78,18 +83,21 @@
         <section>
             <div class="wrapper">
                 <form action="submit" method="GET" class="commentForm">
-                    <label for="name">Name</label>
+                    <label class="sr-only" for="name">Name</label>
                     <input type="text" name="name" id="name" placeholder="Name">
 
-                    <label for="email">Email address</label>
+                    <label class="sr-only" for="email">Email address</label>
                     <input type="email" name="email" id="email" placeholder="Email address">
 
+                    <label class="sr-only" for="comments">Post Comment</label>
                     <textarea name="comments" id="comments" placeholder="Comment" cols="30" rows="10"></textarea>
-                    <button type="submit">Post Comment</button>
+                    <button class="button" type="submit">Post Comment</button>
                 </form>
             </div> <!-- ./wrapper -->
         </section>
     </main>
-    <footer>Copyright 2019 HackerYou</footer>
+    <footer>
+        <p>Copyright <i class="far fa-copyright"></i> 2019 HackerYou</p>
+    </footer>
 </body>
 </html>

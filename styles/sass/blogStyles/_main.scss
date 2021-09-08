@@ -47,7 +47,7 @@ article {
 // ASIDE SECTION
 
 
-aside {
+.blog aside {
     width: 25%;
     padding-top: 100px;
         p:nth-of-type(odd) {
@@ -117,7 +117,7 @@ aside p {
 
 // FORM SECTION
 
-.commentForm {
+.blog .commentForm {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -143,8 +143,4 @@ aside p {
         }
 }
 
-::placeholder {
-    font-weight: 300;
-    line-height: 1.6rem;
-    letter-spacing: 0.1rem;
-}
+

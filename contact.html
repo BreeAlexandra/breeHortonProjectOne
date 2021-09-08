@@ -18,38 +18,43 @@
             <nav>
                 <h6>Beachstays</h6>
                 <ul>
-                    <li><a href=""></a>Home</li>
-                    <li><a href=""></a>About</li>
-                    <li><a href=""></a>Blog</li>
-                    <li><a href=""></a>Contact</li>
+                    <li><a href="index.html" target="_blank">Home</a></li>
+                    <li><a href="index.html#about" target="_blank">About</a></li>
+                    <li><a href="blog.html" target="_blank">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
                 </ul>
             </nav>
             <h2>Get in Touch</h2>
         </div> <!-- ./wrapper -->
     </header>
     <main>
-        <section>
-            <form action="submit" method="GET" class="commentForm">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Name">
-            
-                <label for="email">Email address</label>
-                <input type="email" name="email" id="email" placeholder="Email address">
-            
-                <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
-                <button type="submit">submit</button>
-            </form>
-        </section>
-        <aside>
-            <nav>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-                <a href=""></a>
-            </nav>
-            <p>info@email.com</p>
-            <p>123 - 456 - 7890 <br>123 Queen Street West, <br>Unit 10 <br>Toronto, ON <br>M5V2D5 </p>
-        </aside>
+        <div class="wrapper">
+            <div class="flexContainer">
+                <section>
+                    <form action="submit" method="GET" class="commentForm">
+                        <label class="sr-only" for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Name">
+                        
+                        <label class="sr-only" for="email">Email address</label>
+                        <input type="email" name="email" id="email" placeholder="Email address">
+                        
+                        <label class="sr-only" for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Message"></textarea>
+                        <button class="button" type="submit">submit</button>
+                    </form>
+                </section>
+                <aside>
+                    <nav>
+                        <a href=""><i class="fab fa-facebook-f"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                    </nav>
+                    <p>info@email.com</p>
+                    <p>123 - 456 - 7890 <br>123 Queen Street West, <br>Unit 10 <br>Toronto, ON <br>M5V2D5 </p>
+                </aside>
+            </div> <!-- ./flexContainer -->
+        </div> <!-- ./wrapper -->
     </main>
     
     <footer>

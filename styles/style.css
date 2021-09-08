@@ -317,6 +317,36 @@ p {
   letter-spacing: 0.05rem;
 }
 
+::-webkit-input-placeholder {
+  font-weight: 300;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+::-moz-placeholder {
+  font-weight: 300;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+:-ms-input-placeholder {
+  font-weight: 300;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+::-ms-input-placeholder {
+  font-weight: 300;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
+::placeholder {
+  font-weight: 300;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+}
+
 footer {
   background: black;
   color: #fafffe;
@@ -616,7 +646,7 @@ h1 span {
   letter-spacing: 1px;
 }
 
-.blog header li:nth-child(2) a {
+.blog header li:nth-child(3) a {
   color: #50e3c2;
 }
 
@@ -668,24 +698,24 @@ article img {
   color: #0C5F4C;
 }
 
-aside {
+.blog aside {
   width: 25%;
   padding-top: 100px;
 }
-aside p:nth-of-type(odd) {
+.blog aside p:nth-of-type(odd) {
   color: #063974;
   font-size: 1.25rem;
 }
-aside ul {
+.blog aside ul {
   padding-left: 10px;
   color: #50e3c2;
 }
-aside ul li {
+.blog aside ul li {
   color: black;
   line-height: 1.6rem;
   letter-spacing: 0.1rem;
 }
-aside ul li::before {
+.blog aside ul li::before {
   content: "•";
   color: #50e3c2;
   padding: 10px;
@@ -734,7 +764,7 @@ aside p a {
   padding-bottom: 10px;
 }
 
-.commentForm {
+.blog .commentForm {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -745,8 +775,8 @@ aside p a {
           justify-content: space-between;
   padding-bottom: 100px;
 }
-.commentForm input[type=text],
-.commentForm input[type=email] {
+.blog .commentForm input[type=text],
+.blog .commentForm input[type=email] {
   width: 45%;
   padding: 20px 40px;
   border-top-style: hidden;
@@ -755,44 +785,14 @@ aside p a {
   border-bottom: 2px solid #50e3c2;
   margin-bottom: 30px;
 }
-.commentForm textarea,
-.commentForm button {
+.blog .commentForm textarea,
+.blog .commentForm button {
   width: 100%;
 }
-.commentForm textarea {
+.blog .commentForm textarea {
   resize: none;
   border: 2px solid #50e3c2;
   padding: 75px 40px;
-}
-
-::-webkit-input-placeholder {
-  font-weight: 300;
-  line-height: 1.6rem;
-  letter-spacing: 0.1rem;
-}
-
-::-moz-placeholder {
-  font-weight: 300;
-  line-height: 1.6rem;
-  letter-spacing: 0.1rem;
-}
-
-:-ms-input-placeholder {
-  font-weight: 300;
-  line-height: 1.6rem;
-  letter-spacing: 0.1rem;
-}
-
-::-ms-input-placeholder {
-  font-weight: 300;
-  line-height: 1.6rem;
-  letter-spacing: 0.1rem;
-}
-
-::placeholder {
-  font-weight: 300;
-  line-height: 1.6rem;
-  letter-spacing: 0.1rem;
 }
 
 .contact header {
@@ -828,4 +828,77 @@ aside p a {
 
 .contact header li:last-child a {
   color: #50e3c2;
+}
+
+.contact main {
+  background: #fafffe;
+  height: 80vh;
+}
+
+.contact .flexContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.contact .flexContainer section {
+  width: 70%;
+  position: relative;
+}
+.contact .flexContainer aside {
+  width: 20%;
+  padding-top: 75px;
+}
+
+.contact .commentForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 75px;
+  -webkit-box-shadow: 20px 20px #50e3c2;
+          box-shadow: 20px 20px #50e3c2;
+  background: #fafffe;
+  position: absolute;
+  top: -150px;
+  left: -70px;
+}
+.contact .commentForm input[type=text],
+.contact .commentForm input[type=email] {
+  width: 45%;
+  padding: 20px 40px;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom: 2px solid #50e3c2;
+  margin-bottom: 30px;
+}
+.contact .commentForm textarea,
+.contact .commentForm button {
+  width: 100%;
+}
+.contact .commentForm textarea {
+  resize: none;
+  border: 2px solid #50e3c2;
+  padding: 40px 40px;
+  height: 200px;
+}
+
+.contact aside a {
+  color: black;
+}
+.contact aside a i {
+  padding-right: 20px;
+}
+
+.contact aside p:first-of-type {
+  font-size: 1.2rem;
+  margin-top: 20px;
+  font-weight: bold;
 }

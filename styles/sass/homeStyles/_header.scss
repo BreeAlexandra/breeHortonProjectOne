@@ -5,7 +5,7 @@
                 display: flex;
                 justify-content: space-between;
                 padding: 20px 0;
-                    ul {
+                    .mainNav {
                         display: flex;
                         width: 40%;
                         justify-content: space-between;
@@ -15,6 +15,9 @@
                                 font-weight: bold;
                                 line-height: 29px;
                                 letter-spacing: 1px;
+                                    &:hover {
+                                        color: $primaryColor;
+                                }
                             }
                     }
             }

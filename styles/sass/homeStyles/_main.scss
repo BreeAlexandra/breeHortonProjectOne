@@ -111,6 +111,10 @@
         }
 }
 
+.planAhead .button:hover {
+    background: $lightBlue;
+}
+
 
 // NEW LOCATIONS SECTION
 
@@ -143,6 +147,10 @@
         p {
             margin: 25px 0;
         }
+}
+
+.newLocations .button:hover {
+    background: $lightBlue;
 }
 
 // FREE SECTION

@@ -73,12 +73,6 @@ p {
     letter-spacing: 0.1rem;
 }
 
-.home .hamburgerNav,
-.blog .hamburgerNav,
-.contact .hamburgerNav {
-    display: none;
-}
-
 .button {
     background: $twilightBlue;
     color: $iceBlue;
@@ -87,6 +81,11 @@ p {
     font-family: 'Playfair Display SC', serif;
     line-height: 1.6rem;
     letter-spacing: 0.05rem;
+        &:hover {
+            background: $iceBlue;
+            color: $twilightBlue;
+            transition: .5s;
+        }
 }
 
 ::placeholder {

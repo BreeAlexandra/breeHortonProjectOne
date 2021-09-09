@@ -307,12 +307,6 @@ p {
   letter-spacing: 0.1rem;
 }
 
-.home .hamburgerNav,
-.blog .hamburgerNav,
-.contact .hamburgerNav {
-  display: none;
-}
-
 .button {
   background: #063974;
   color: #fafffe;
@@ -321,6 +315,12 @@ p {
   font-family: "Playfair Display SC", serif;
   line-height: 1.6rem;
   letter-spacing: 0.05rem;
+}
+.button:hover {
+  background: #fafffe;
+  color: #063974;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 ::-webkit-input-placeholder {
@@ -377,7 +377,7 @@ footer p {
           justify-content: space-between;
   padding: 20px 0;
 }
-.home header nav ul {
+.home header nav .mainNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,12 +386,15 @@ footer p {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.home header nav ul a {
+.home header nav .mainNav a {
   color: #fafffe;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 29px;
   letter-spacing: 1px;
+}
+.home header nav .mainNav a:hover {
+  color: #50e3c2;
 }
 
 .home header li:first-child a {
@@ -572,6 +575,10 @@ h1 span {
   width: 100%;
 }
 
+.planAhead .button:hover {
+  background: #d2f9f1;
+}
+
 .newLocations {
   background: #d2f9f1;
   display: -webkit-box;
@@ -610,6 +617,10 @@ h1 span {
   margin: 25px 0;
 }
 
+.newLocations .button:hover {
+  background: #d2f9f1;
+}
+
 .free {
   background: #fafffe;
 }
@@ -638,7 +649,7 @@ h1 span {
           justify-content: space-between;
   padding: 20px 0;
 }
-.blog header nav ul {
+.blog header nav .mainNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -647,12 +658,15 @@ h1 span {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.blog header nav ul a {
+.blog header nav .mainNav a {
   color: #fafffe;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 29px;
   letter-spacing: 1px;
+}
+.blog header nav .mainNav a:hover {
+  color: #50e3c2;
 }
 
 .blog header li:nth-child(3) a {
@@ -818,7 +832,7 @@ aside p a {
           justify-content: space-between;
   padding: 20px 0;
 }
-.contact header nav ul {
+.contact header nav .mainNav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -827,20 +841,19 @@ aside p a {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.contact header nav ul a {
+.contact header nav .mainNav a {
   color: #fafffe;
   text-transform: uppercase;
   font-weight: bold;
   line-height: 29px;
   letter-spacing: 1px;
 }
-
-.contact header li:last-child a {
+.contact header nav .mainNav a:hover {
   color: #50e3c2;
 }
 
-.contact .hamburgerNav ul {
-  background: #50e3c2;
+.contact header li:last-child a {
+  color: #50e3c2;
 }
 
 .contact main {
@@ -918,19 +931,22 @@ aside p a {
   font-weight: bold;
 }
 
-@media (max-width: 940px) {
-  .home .mainNav,
-.blog .mainNav,
-.contact .mainNav {
-    display: none;
+@media (max-width: 1240px) {
+  .blog aside {
+    width: 31%;
   }
-
-  .home .hamburgerNav,
-.blog .hamburgerNav,
-.contact .hamburgerNav {
-    display: block;
-    color: #50e3c2;
-    font-size: 2rem;
+}
+@media (max-width: 999px) {
+  .home header nav .mainNav,
+.blog header nav .mainNav,
+.contact header nav .mainNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 
   nav h6 {
@@ -949,11 +965,28 @@ aside p a {
     font-size: 4rem;
   }
 
+  .information .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .information .wrapper .beachHouses,
+.information .wrapper .community,
+.information .wrapper .infoBlog,
+.information .wrapper .getInTouch {
+    width: 100%;
+  }
+
   .PAimageContainer img,
 .NLimageContainer img {
     position: static;
     -webkit-box-shadow: 20px 20px #50e3c2;
             box-shadow: 20px 20px #50e3c2;
+  }
+
+  h2 {
+    padding-top: 100px;
   }
 
   h4 {
@@ -1002,10 +1035,9 @@ aside p a {
             box-shadow: none;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   h2 {
     font-size: 3.5rem;
-    padding-top: 100px;
   }
 
   .h1Container {
@@ -1036,17 +1068,15 @@ aside p a {
     text-align: center;
   }
 
-  .information .wrapper {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  .imageGallery ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .information .wrapper .beachHouses,
-.information .wrapper .community,
-.information .wrapper .infoBlog,
-.information .wrapper .getInTouch {
-    width: 100%;
+  .imageGallery ul li {
+    width: 45%;
+  }
+  .imageGallery ul li:last-child {
+    display: none;
   }
 
   .planAhead {

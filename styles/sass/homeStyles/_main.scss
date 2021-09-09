@@ -19,8 +19,8 @@
 
 .VGimage {
     box-shadow: -20px 20px $primaryColor;
-    width: 350px;
-    height: 350px;
+    width: 30%;
+    height: 30%;
 }
 
 // GALLERY SECTION
@@ -87,7 +87,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60vh;
         p {
             margin: 25px 0;
         }
@@ -95,16 +94,20 @@
 
 .PAimageContainer,
 .PAtextContainer {
-    width: calc(50% - 100px);
-    margin-right: 50px;
+    width: 45%;
+}
+
+.PAtextContainer {
+    padding: 50px 0 100px 0;
 }
 
 .PAimageContainer {
     position: relative;
         img {
             position: absolute;
-            top: -200px;
+            top: -250px;
             box-shadow: 20px 20px $primaryColor;
+            width: 100%;
         }
 }
 
@@ -116,28 +119,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60vh;
 }
 
 .NLtextContainer,
 .NLimageContainer {
-    width: calc(50% - 100px);
-    margin-left: 50px;
+    width: 45%;
 }
 
 .NLimageContainer {
     position: relative;
         img {
             position: absolute;
-            top: -200px;
+            bottom: -200px;
             right: 0px;
             box-shadow: -20px 20px $primaryColor;
-
+            width: 100%;
         }
 }
 
 .NLtextContainer {
     text-align: right;
+    padding-bottom: 50px;
         p {
             margin: 25px 0;
         }

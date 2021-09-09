@@ -1,0 +1,187 @@
+// MEDIA QUERY 940PX
+@media (max-width: 940px) {
+
+// HEADER
+    .home .mainNav,
+    .blog .mainNav,
+    .contact .mainNav {
+        display: none;
+    }
+    .home .hamburgerNav,
+    .blog .hamburgerNav,
+    .contact .hamburgerNav {
+        display: block;
+        color: $primaryColor;
+        font-size: 2rem;
+    }
+    nav h6 {
+        font-size: 1.5rem;
+    }
+    
+// HOME    
+    .h1Container {
+        justify-content: center;
+            h1 {
+                font-size: 2rem;
+                    span {
+                        font-size: 4rem;
+                    }
+            }
+    }
+    .PAimageContainer img,
+    .NLimageContainer img {
+        position: static;
+        box-shadow: 20px 20px $primaryColor;
+    
+    }
+
+// BLOG
+    h4 {
+        font-size: 1.2rem;
+    }
+    .blogFlex {
+        flex-direction: column;
+        width: 85%;
+        margin: 0 auto;
+            article,
+            aside {
+                width: 100%;
+            }
+            aside {
+                text-align: center;
+                    ul,
+                    p {
+                        text-align: left;
+                    }
+            }
+    }
+    .comment1,
+    .comment2 {
+        width: 100%;
+    }
+
+// CONTACT
+    .contact .flexContainer {
+        flex-direction: column;
+            section,
+            aside {
+                width: 100%;
+            }
+    }
+    .contact .commentForm {
+        position: static;
+        box-shadow: none;
+    }
+}
+
+// MEDIA QUERY 768X
+@media (max-width: 768px) {
+// HEADER
+    h2 {
+        font-size: 3.5rem;
+        padding-top: 100px;
+    }
+
+// HOME    
+    .h1Container {
+        justify-content: center;
+            h1 {
+                font-size: 1.5rem;
+                    span {
+                        font-size: 3rem;
+                    }
+            }
+    }
+    .home .visitGuyana .wrapper {
+        flex-direction: column-reverse;
+        padding-bottom: 0%;
+            .VGtextContainer,
+            .VGimage {
+                width: 100%;
+            }
+            .VGtextContainer {
+                padding: 55px 0;
+                text-align: center;
+            }
+        
+    }
+    .information .wrapper {
+        flex-direction: column;
+            .beachHouses,
+            .community,
+            .infoBlog,
+            .getInTouch {
+                width: 100%;
+            }
+    }
+    .planAhead {
+        flex-direction: column;
+        padding-top: 50px;
+            .PAtextContainer {
+                text-align: center;
+                width: 85%;
+            }  
+            .PAimageContainer {
+                width: 85%;
+            }     
+    }
+    .newLocations {
+        flex-direction: column-reverse;
+            .NLtextContainer {
+                text-align: center;
+                width: 85%;
+            }
+            .NLimageContainer {
+                padding-bottom: 50px;
+                width: 85%;
+            }
+    }
+    .free .wrapper {
+        padding: 50px 0;
+    }
+
+// BLOG
+    
+    .articleText {
+        padding: 46% 10px 10px 10px;
+    }
+    .blog .commentForm input[type=text],
+    .blog .commentForm input[type=email] {
+        width: 100%;
+    }
+
+// CONTACT
+    .contact .commentForm input[type=text],
+    .contact .commentForm input[type=email] {
+        width: 100%;
+    }
+}
+// MEDIA QUERY 480PX
+@media (max-width: 480px) {
+
+// HOME    
+    .h1Container {
+        justify-content: center;
+        height: 60vh;
+            h1 {
+                font-size: 1rem;
+                line-height: 1.8rem;
+                    span {
+                        font-size: 2rem;
+                        padding: 0;
+                    }
+            }
+    }
+    .headerBox {
+        display: none;
+    }
+    .visitGuyana .wrapper {
+        padding-top: 50px; 
+    }
+
+// BLOG
+    .c1imageContainer, 
+    .c2imageContainer {
+        display: none;
+    }
+}

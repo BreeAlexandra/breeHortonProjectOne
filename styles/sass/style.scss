@@ -1,7 +1,8 @@
 @import "setup";
 @import "vars";
-@import "general";
 @import "mixins";
+
+@import "general";
 
 @import "homeStyles/header";
 @import "homeStyles/main";
@@ -10,4 +11,6 @@
 @import "blogStyles/main";
 
 @import "contactStyles/header";
-@import "contactStyles/main"
+@import "contactStyles/main";
+
+@import "mediaQuery";

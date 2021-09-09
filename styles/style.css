@@ -307,6 +307,12 @@ p {
   letter-spacing: 0.1rem;
 }
 
+.home .hamburgerNav,
+.blog .hamburgerNav,
+.contact .hamburgerNav {
+  display: none;
+}
+
 .button {
   background: #063974;
   color: #fafffe;
@@ -453,8 +459,8 @@ h1 span {
 .VGimage {
   -webkit-box-shadow: -20px 20px #50e3c2;
           box-shadow: -20px 20px #50e3c2;
-  width: 350px;
-  height: 350px;
+  width: 30%;
+  height: 30%;
 }
 
 .imageGallery {
@@ -541,7 +547,6 @@ h1 span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60vh;
 }
 .planAhead p {
   margin: 25px 0;
@@ -549,8 +554,11 @@ h1 span {
 
 .PAimageContainer,
 .PAtextContainer {
-  width: calc(50% - 100px);
-  margin-right: 50px;
+  width: 45%;
+}
+
+.PAtextContainer {
+  padding: 50px 0 100px 0;
 }
 
 .PAimageContainer {
@@ -558,9 +566,10 @@ h1 span {
 }
 .PAimageContainer img {
   position: absolute;
-  top: -200px;
+  top: -250px;
   -webkit-box-shadow: 20px 20px #50e3c2;
           box-shadow: 20px 20px #50e3c2;
+  width: 100%;
 }
 
 .newLocations {
@@ -574,13 +583,11 @@ h1 span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 60vh;
 }
 
 .NLtextContainer,
 .NLimageContainer {
-  width: calc(50% - 100px);
-  margin-left: 50px;
+  width: 45%;
 }
 
 .NLimageContainer {
@@ -588,14 +595,16 @@ h1 span {
 }
 .NLimageContainer img {
   position: absolute;
-  top: -200px;
+  bottom: -200px;
   right: 0px;
   -webkit-box-shadow: -20px 20px #50e3c2;
           box-shadow: -20px 20px #50e3c2;
+  width: 100%;
 }
 
 .NLtextContainer {
   text-align: right;
+  padding-bottom: 50px;
 }
 .NLtextContainer p {
   margin: 25px 0;
@@ -679,8 +688,8 @@ article img {
 }
 
 .articleText {
-  padding: 425px 50px 50px 30px;
-  margin-left: 75px;
+  padding: 55% 50px 50px 30px;
+  margin-left: 10%;
 }
 .articleText p {
   margin: 25px 0;
@@ -830,9 +839,12 @@ aside p a {
   color: #50e3c2;
 }
 
+.contact .hamburgerNav ul {
+  background: #50e3c2;
+}
+
 .contact main {
   background: #fafffe;
-  height: 80vh;
 }
 
 .contact .flexContainer {
@@ -890,6 +902,9 @@ aside p a {
   height: 200px;
 }
 
+.contact aside {
+  padding: 100px 0;
+}
 .contact aside a {
   color: black;
 }
@@ -901,4 +916,213 @@ aside p a {
   font-size: 1.2rem;
   margin-top: 20px;
   font-weight: bold;
+}
+
+@media (max-width: 940px) {
+  .home .mainNav,
+.blog .mainNav,
+.contact .mainNav {
+    display: none;
+  }
+
+  .home .hamburgerNav,
+.blog .hamburgerNav,
+.contact .hamburgerNav {
+    display: block;
+    color: #50e3c2;
+    font-size: 2rem;
+  }
+
+  nav h6 {
+    font-size: 1.5rem;
+  }
+
+  .h1Container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .h1Container h1 {
+    font-size: 2rem;
+  }
+  .h1Container h1 span {
+    font-size: 4rem;
+  }
+
+  .PAimageContainer img,
+.NLimageContainer img {
+    position: static;
+    -webkit-box-shadow: 20px 20px #50e3c2;
+            box-shadow: 20px 20px #50e3c2;
+  }
+
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  .blogFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 85%;
+    margin: 0 auto;
+  }
+  .blogFlex article,
+.blogFlex aside {
+    width: 100%;
+  }
+  .blogFlex aside {
+    text-align: center;
+  }
+  .blogFlex aside ul,
+.blogFlex aside p {
+    text-align: left;
+  }
+
+  .comment1,
+.comment2 {
+    width: 100%;
+  }
+
+  .contact .flexContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contact .flexContainer section,
+.contact .flexContainer aside {
+    width: 100%;
+  }
+
+  .contact .commentForm {
+    position: static;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 3.5rem;
+    padding-top: 100px;
+  }
+
+  .h1Container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .h1Container h1 {
+    font-size: 1.5rem;
+  }
+  .h1Container h1 span {
+    font-size: 3rem;
+  }
+
+  .home .visitGuyana .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    padding-bottom: 0%;
+  }
+  .home .visitGuyana .wrapper .VGtextContainer,
+.home .visitGuyana .wrapper .VGimage {
+    width: 100%;
+  }
+  .home .visitGuyana .wrapper .VGtextContainer {
+    padding: 55px 0;
+    text-align: center;
+  }
+
+  .information .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .information .wrapper .beachHouses,
+.information .wrapper .community,
+.information .wrapper .infoBlog,
+.information .wrapper .getInTouch {
+    width: 100%;
+  }
+
+  .planAhead {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 50px;
+  }
+  .planAhead .PAtextContainer {
+    text-align: center;
+    width: 85%;
+  }
+  .planAhead .PAimageContainer {
+    width: 85%;
+  }
+
+  .newLocations {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .newLocations .NLtextContainer {
+    text-align: center;
+    width: 85%;
+  }
+  .newLocations .NLimageContainer {
+    padding-bottom: 50px;
+    width: 85%;
+  }
+
+  .free .wrapper {
+    padding: 50px 0;
+  }
+
+  .articleText {
+    padding: 46% 10px 10px 10px;
+  }
+
+  .blog .commentForm input[type=text],
+.blog .commentForm input[type=email] {
+    width: 100%;
+  }
+
+  .contact .commentForm input[type=text],
+.contact .commentForm input[type=email] {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  .h1Container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: 60vh;
+  }
+  .h1Container h1 {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+  .h1Container h1 span {
+    font-size: 2rem;
+    padding: 0;
+  }
+
+  .headerBox {
+    display: none;
+  }
+
+  .visitGuyana .wrapper {
+    padding-top: 50px;
+  }
+
+  .c1imageContainer,
+.c2imageContainer {
+    display: none;
+  }
 }

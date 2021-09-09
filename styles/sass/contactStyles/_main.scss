@@ -1,6 +1,5 @@
 .contact main {
     background: $iceBlue;
-    height: 80vh;
 }
 
 .contact .flexContainer {
@@ -52,13 +51,15 @@
 
 // CONTACT ASIDE
 
-.contact aside a {
-    color: black;
-        i {
-            padding-right: 20px;
+.contact aside {
+    padding: 100px 0;
+        a {
+            color: black;
+                i {
+                    padding-right: 20px;
+                }
         }
 }
-
 .contact aside p:first-of-type {
     font-size: 1.2rem;
     margin-top: 20px;

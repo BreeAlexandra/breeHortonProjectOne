@@ -105,6 +105,10 @@
                     }
             }
     }
+    .headerBox {
+        width: 400px;
+        height: 400px;
+    }
     .home .visitGuyana .wrapper {
         flex-direction: column-reverse;
         padding-bottom: 0%;
@@ -191,10 +195,35 @@
     .visitGuyana .wrapper {
         padding-top: 50px; 
     }
-
+    .imageGallery ul li {
+            width: 100%;
+    }    
+    .imageGallery li:nth-child(2) {
+            display: none;
+    }
+    .beachHouses, 
+    .community, 
+    .infoBlog, 
+    .getInTouch {
+    padding: 25px 0;
+        .icon {
+            width: 20%;
+        }
+    .beachHouses .text h5, 
+    .community .text h5, 
+    .infoBlog .text h5, 
+    .getInTouch .text h5{
+        font-size: 1.25rem;
+    }
+    }
 // BLOG
     .c1imageContainer, 
     .c2imageContainer {
         display: none;
     }
+
+// CONTACT
+    .contact .commentForm {
+            padding: 75px 0;
+        }
 }

@@ -1052,6 +1052,11 @@ aside p a {
     font-size: 3rem;
   }
 
+  .headerBox {
+    width: 400px;
+    height: 400px;
+  }
+
   .home .visitGuyana .wrapper {
     -webkit-box-orient: vertical;
     -webkit-box-direction: reverse;
@@ -1151,8 +1156,51 @@ aside p a {
     padding-top: 50px;
   }
 
+  .imageGallery ul li {
+    width: 100%;
+  }
+
+  .imageGallery li:nth-child(2) {
+    display: none;
+  }
+
+  .beachHouses,
+.community,
+.infoBlog,
+.getInTouch {
+    padding: 25px 0;
+  }
+  .beachHouses .icon,
+.community .icon,
+.infoBlog .icon,
+.getInTouch .icon {
+    width: 20%;
+  }
+  .beachHouses .beachHouses .text h5,
+.beachHouses .community .text h5,
+.beachHouses .infoBlog .text h5,
+.beachHouses .getInTouch .text h5,
+.community .beachHouses .text h5,
+.community .community .text h5,
+.community .infoBlog .text h5,
+.community .getInTouch .text h5,
+.infoBlog .beachHouses .text h5,
+.infoBlog .community .text h5,
+.infoBlog .infoBlog .text h5,
+.infoBlog .getInTouch .text h5,
+.getInTouch .beachHouses .text h5,
+.getInTouch .community .text h5,
+.getInTouch .infoBlog .text h5,
+.getInTouch .getInTouch .text h5 {
+    font-size: 1.25rem;
+  }
+
   .c1imageContainer,
 .c2imageContainer {
     display: none;
+  }
+
+  .contact .commentForm {
+    padding: 75px 0;
   }
 }

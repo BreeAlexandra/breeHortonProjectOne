@@ -754,7 +754,8 @@ aside p a {
 }
 
 .comment1,
-.comment2 {
+.comment2,
+.comment3 {
   width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -763,12 +764,14 @@ aside p a {
 }
 
 .c1imageContainer,
-.c2imageContainer {
+.c2imageContainer,
+.c3imageContainer {
   width: 20%;
 }
 
 .c1textContainer,
-.c2textContainer {
+.c2textContainer,
+.c3textContainer {
   width: 80%;
 }
 
@@ -809,14 +812,16 @@ aside p a {
   margin-bottom: 30px;
 }
 .blog .commentForm textarea,
-.blog .commentForm button {
+.blog .commentForm .button {
   width: 100%;
 }
 .blog .commentForm textarea {
   resize: none;
   border: 2px solid #50e3c2;
   padding: 75px 40px;
-  background: tomato;
+}
+.blog .commentForm .button {
+  text-align: center;
 }
 
 .contact header {

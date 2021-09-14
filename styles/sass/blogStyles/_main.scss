@@ -83,19 +83,22 @@ aside p {
 
 
 .comment1,
-.comment2 {
+.comment2,
+.comment3 {
     width: 60%;
     display: flex;
     padding: 40px 0;
 }
 
 .c1imageContainer,
-.c2imageContainer {
+.c2imageContainer,
+.c3imageContainer {
     width: 20%;
 }
 
 .c1textContainer,
-.c2textContainer {
+.c2textContainer,
+.c3textContainer {
     width: 80%;
 }
 
@@ -133,14 +136,16 @@ aside p {
             margin-bottom: 30px;
         }
         textarea,
-        button  {
+        .button  {
             width: 100%;
         }
         textarea {
             resize: none;
             border: 2px solid $primaryColor;
             padding: 75px 40px;
-            background: tomato;
+        }
+        .button {
+            text-align: center;
         }
 }
 

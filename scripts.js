@@ -16,15 +16,24 @@
         
         const name = document.getElementById('name');
         const userName = name.value;
-        console.log(userName);
+
+        const email = document.querySelector('input[type=email]');
+        const userEmail = email.value
+        console.log(userEmail);
+        
         const commentForm = document.querySelector('.blog textarea');
         const userComment = commentForm.value;
-        console.log(userComment);
+
+        // I'm not sure the best way to credit someone for helping me - but my cohort mate Ryan shared this code and gave me his permission to use it!! I hope that's ok!
+        const today = new Date;
+        const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
 
         addImage();
-        addName(`Thursday September 16th, 2021 by ${userName}`);
+        addName(`${today.toLocaleDateString(undefined,options)} by ${userName}`);
         addComment(userComment);
-        
+
+        formElement.reset();
+
     });
 
     const addImage = function() {
@@ -51,6 +60,6 @@
     }
 
 
-
+    
     
 
